@@ -1,0 +1,148 @@
+const staffMembers = [
+  {
+    id: 1,
+    name: "Chef Marco Pierre",
+    position: "Executive Chef & Founder",
+    bio: "With 25 years of international experience and 3 Michelin stars to his name, Chef Marco brings unparalleled expertise to our kitchen.",
+    image: "https://images.unsplash.com/photo-1581299894007-aaa50297cf16",
+    stats: [
+      { value: 3, label: "Michelin Stars" },
+      { value: 25, label: "Years Experience" },
+      { value: 12, label: "Awards Won" },
+    ],
+  },
+  {
+    id: 2,
+    name: "Chef Anna Patel",
+    position: "Head Pastry Chef",
+    bio: "Specializing in French patisserie with an Indian twist, Chef Anna creates desserts that are both visually stunning and delicious.",
+    image: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c",
+    stats: [
+      { value: 15, label: "Years Experience" },
+      { value: 5, label: "Dessert Awards" },
+      { value: 50, label: "Signature Desserts" },
+    ],
+  },
+  {
+    id: 3,
+    name: "Sommie Markina",
+    position: "Wine Director",
+    bio: "With certifications from both France and Italy, David curates our award-winning wine list to perfectly complement our menu.",
+    image: "https://imgcdn.stablediffusionweb.com/2024/5/19/631b6090-c4ed-496f-ba1a-463c80d79552.jpg",
+    stats: [
+      { value: 10, label: "Years Experience" },
+      { value: 300, label: "Wines in Cellar" },
+      { value: 5, label: "Wine Awards" },
+    ],
+  },
+  {
+    id: 4,
+    name: "Manager Sofia Rodriguez",
+    position: "General Manager",
+    bio: "Sofia ensures every guest receives impeccable service, drawing from her 15 years in luxury hospitality management.",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
+    stats: [
+      { value: 15, label: "Years Experience" },
+      { value: 1000, label: "Happy Guests" },
+      { value: 10, label: "Service Awards" },
+    ],
+  },
+  {
+    id: 5,
+    name: "Chef Luca Moretti",
+    position: "Sous Chef",
+    bio: "Luca brings flair from the streets of Naples, fusing tradition with innovation in every dish.",
+    image: "https://www.imprintplus.com/media/magefan_blog/600x402_Blog_Migration_Restaurant.png",
+    stats: [
+      { value: 12, label: "Years Experience" },
+      { value: 30, label: "Dishes Created" },
+      { value: 4, label: "Chef Awards" },
+    ],
+  },
+  {
+    id: 6,
+    name: "Chef Mei Lin",
+    position: "Pan-Asian Specialist",
+    bio: "Trained in Singapore and Tokyo, Mei crafts a pan-Asian menu with bold flavors and delicate presentation.",
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+    stats: [
+      { value: 8, label: "Years Experience" },
+      { value: 20, label: "Fusion Recipes" },
+      { value: 3, label: "TV Appearances" },
+    ],
+  },
+  {
+    id: 7,
+    name: "Bartender Carlos Diaz",
+    position: "Mixology Expert",
+    bio: "Carlos blends tradition and modernism, offering signature cocktails that elevate every occasion.",
+    image: "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
+    stats: [
+      { value: 6, label: "Years Experience" },
+      { value: 40, label: "Cocktails Designed" },
+      { value: 7, label: "Bar Awards" },
+    ],
+  },
+  {
+    id: 8,
+    name: "Chef Aiko Tanaka",
+    position: "Sushi Master",
+    bio: "Aiko brings an elegant touch to every roll, blending tradition and creativity in Japanese cuisine.",
+    image: "https://images.unsplash.com/photo-1552058544-f2b08422138a",
+    stats: [
+      { value: 14, label: "Years Experience" },
+      { value: 100, label: "Sushi Recipes" },
+      { value: 5, label: "Culinary Awards" },
+    ],
+  },
+  { 
+    id: 9,
+    name: "Server Michel Thompson",
+    position: "Senior Hostess",
+    bio: "With a warm smile and professional grace, Mia ensures each guest's visit is memorable from start to finish.",
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+    stats: [
+      { value: 10, label: "Years Experience" },
+      { value: 700, label: "Guests Served" },
+      { value: 6, label: "Customer Awards" },
+    ],
+  },
+  {
+    id: 10,
+    name: "Chef Rajiv Verma",
+    position: "Indian Cuisine Expert",
+    bio: "Rajiv fuses heritage recipes with contemporary flair, delivering rich and aromatic Indian dishes.",
+    image: "https://img.freepik.com/free-photo/portrait-waiter-holding-plates-with-food-looking-camera-while-working-pub_637285-2415.jpg?semt=ais_items_boosted&w=740",
+    stats: [
+      { value: 18, label: "Years Experience" },
+      { value: 200, label: "Dishes Created" },
+      { value: 9, label: "Food Festivals" },
+    ],
+  },
+  {
+    id: 11,
+    name: "Baker Julia Hayes",
+    position: "Bread & Dough Specialist",
+    bio: "Julia's artisan breads are a fan favorite, made from locally sourced grains and baked fresh daily.",
+    image: "https://img.freepik.com/free-photo/we-serve-best-cakes_637285-7884.jpg?semt=ais_items_boosted&w=740",
+    stats: [
+      { value: 9, label: "Years Experience" },
+      { value: 100, label: "Breads Baked" },
+      { value: 4, label: "Baking Awards" },
+    ],
+  },
+  {
+    id: 12,
+    name: "Chef Omar El-Sayed",
+    position: "Grill Master",
+    bio: "Omar turns the grill into an art form, serving perfectly seared meats and smoky flavors to perfection.",
+    image: "https://www.daysoftheyear.com/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=cover%2Ch=1155%2Cq=85%2Cw=1732/wp-content/uploads/waiters-day.jpg",
+    stats: [
+      { value: 11, label: "Years Experience" },
+      { value: 80, label: "Grilled Dishes" },
+      { value: 5, label: "Grill Awards" },
+    ],
+  },
+];
+
+export default staffMembers;
