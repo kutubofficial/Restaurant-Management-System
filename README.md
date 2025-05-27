@@ -13,7 +13,7 @@ A responsive, modern restaurant-themed web application built using **React.js** 
 
 ## 📸 Screenshots
 
-![Restaurant UI](./public/images/interior.jpg)
+![Restaurant UI](./public/images/restro.jpg)
 *Customize screenshots based on your final deployment*
 
 ## 🛠️ Tech Stack
