@@ -19,7 +19,7 @@ const AboutSection = () => {
   const currentMember = staffMembers[currentIndex];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="About Us" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">

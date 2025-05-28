@@ -82,14 +82,14 @@ const Navbar = ({ cartCount, cartItems, setCartItems }) => {
             </Link>
 
             <div className="hidden md:flex items-center space-x-9">
-              {["about", "menu", "contact"].map((menu) => (
+              {["About Us", "menu", "Contact Us"].map((menu) => (
                 <Link
                   key={menu}
                   to={menu}
                   smooth={true}
                   className="group relative cursor-pointer font-medium text-blue-600 px-3 py-0 rounded-lg transition"
                 >
-                  {menu.charAt(0).toUpperCase() + menu.slice(1)} Us
+                  {menu.charAt(0).toUpperCase() + menu.slice(1)} 
                   <span className="absolute left-0 -bottom-1 w-full h-[1px] bg-gradient-to-r from-blue-500 to-purple-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                   <span className="absolute left-0 -bottom-2 w-full h-[1.5px] bg-gradient-to-r from-blue-500 to-purple-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 delay-100"></span>
                 </Link>
@@ -119,7 +119,7 @@ const Navbar = ({ cartCount, cartItems, setCartItems }) => {
           {isMobileMenuOpen && (
             <div className="md:hidden bg-white shadow-lg animate-fadeIn">
               <div className="px-6 py-3 flex flex-col space-y-3">
-                {["about", "menu", "contact"].map((item) => (
+                {["About Us", "menu", "Contact Us"].map((item) => (
                   <Link
                     key={item}
                     to={item}
@@ -127,7 +127,7 @@ const Navbar = ({ cartCount, cartItems, setCartItems }) => {
                     className="cursor-pointer font-medium text-gray-700 hover:text-blue-600 transition px-4 py-3 rounded-lg hover:bg-blue-50"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    {item.charAt(0).toUpperCase() + item.slice(1)} Us
+                    {item.charAt(0).toUpperCase() + item.slice(1)} 
                   </Link>
                 ))}
                 <div className="flex items-center px-4 py-3 rounded-lg hover:bg-blue-50 transition">
